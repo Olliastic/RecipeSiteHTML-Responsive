@@ -1,0 +1,73 @@
+html,
+body {
+    * {
+        box-sizing: border-box;
+    }
+    height: 100%;
+    font-size: 14px;
+    /*   margin: 0px 50px;  */
+}
+
+.ingred {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+<!-- see: http: //css-tricks.com/line-on-sides-headers/ - incorporated improvements from Joshua Hibbert's comment to drop the <span> --> 
+p.ingred {
+    display: table;
+    width: 100%;
+    white-space: nowrap;
+}
+/* svg background */
+
+.n1 {
+    width: 45px;
+}
+
+.title {
+    font-size: 1.5em;
+    /*    font-weight: bold;*/
+}
+
+.content {
+    font-family: 'Slabo 27px', serif;
+    /*  border: green;
+    border-style: dashed;  */
+}
+
+.slideS {
+    background-color: transparent;
+    border: 5px solid green;
+}
+
+.ingredientList {
+    line-height: 25px;
+    background-color: #656161;
+    /*    height: 420px;*/
+    
+    color: white;
+}
+
+.instructions {
+    line-height: 20px;
+}
+
+header {
+    background-color: transparent;
+}
+
+.topBanner {
+    background-color: #6DC396;
+}
+
+article {
+    background-color: transparent;
+}
+/* aside {
+    background-color: orange;
+} */
+
+footer {
+    background-color: #6DC396;
+}

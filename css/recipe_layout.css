@@ -1,0 +1,137 @@
+@media (min-width: 786px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header {
+        flex: 0 0 auto;
+        min-width: 960px;
+    }
+    .topBanner {
+        flex: 0 1 auto;
+        height: 30px;
+    }
+    .slideS {
+        height: 400px;
+        margin-top: 110px;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 210px;
+        /* somehow this places the logo just above the slideShowArea */
+        
+        max-width: 200px;
+    }
+    .banner {
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-image: url('BorderTile.png');
+        background-size: 36px ;
+        background-color: transparent;
+        background-repeat: repeat-x;
+        background-position: center;
+    }
+    .content {
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        /*this centered the content as a whole*/
+        
+        max-width: 960px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .ingredientList {
+        flex: 0 0 30%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+    }
+    .instructions {
+        margin: 0 0 15;
+        margin-left: 40px;
+    }
+    .n1 {
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 10px;
+    }
+    article {
+        flex: 0 0 70%;
+        /* flex: 1 1 auto;  */
+        
+        padding-left: 62px;
+    }
+    footer {
+        flex-direction: column;
+        flex: 0 0 100%;
+        min-width: 960px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 786px) {
+    .flex {
+        flex-direction: column;
+        /*        min-width: 100%;*/
+    }
+    .topBanner {
+        flex: 0 0 auto;
+        height: 30px;
+    }
+    header {
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        height: auto;
+        max-width: 786px;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -80%);
+        width: 210px;
+    }
+    .slideS {
+        margin-top: 180px;
+        display: block;
+    }
+    /*
+    .banner {
+        display: block;
+        width: 100%;
+        height: 30px;
+        background-image: url('BorderTile.png');
+        background-color: transparent;
+        background-repeat: repeat-x;
+        background-position: center;
+    }
+*/
+    
+    .soup {
+        display: block;
+        width: 100%;
+    }
+    .content {
+        width: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ingredientList {
+        flex: 0 1 auto;
+        padding: 15px;
+    }
+    article {
+        flex: 0 1 auto;
+        padding: 15px;
+    }
+}
